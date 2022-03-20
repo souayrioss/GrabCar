@@ -1,0 +1,147 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: #dbdbdb;
+	font-family: Arial,Helvetica,sans-serif;
+}
+.wrapper{
+	background-color: #fff;
+	width: 500px;
+	padding: 25px;
+	margin: 25px auto 0;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+.wrapper h2{
+	color: #00BFA6;
+	font-size: 24px;
+	padding: 10px;
+	margin-bottom: 20px;
+	text-align: center;
+
+}
+h4{
+	text-align: center;
+
+	padding-bottom: 5px;
+	color:#00BFA6;
+}
+.input-group{
+	padding-bottom: 8px;
+	width: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	padding: 5px 0;
+
+}
+.input-box{
+	width: 100%;
+	margin-right: 12px;
+	position:relative;
+}
+.input-box:last-child{
+	margin-right: 0;
+}
+.name{
+	padding: 14px 10px 14px 50px;
+	width: 100%;
+	background-color: #ededed ;
+	border: 1px solid #00000033;
+	outline: none;
+	letter-spacing: 1px;
+	transition: 0.3s;
+	border-radius: 3px;
+	color: #333;
+}
+.name:focus, .dob:focus{
+	-webkit-box-shadow: 0 0 2px 1px #00BFA6;
+	-moz-box-shadow: 0 0 2px 1px #00BFA6;
+	box-shadow: 0 0 2px 1px #00BFA6;
+	border: 1px solid #00BFA6;
+}
+.input-box .icon{
+	width: 48px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	color: #333;
+	background-color: #dbdbdb;
+	border-radius: 2px 0 0 2px;
+	transition: 0.3s;
+	font-size: 20px;
+	pointer-events: none;
+	border: 1px solid #00000033;
+	border-right: none;
+}
+.name:focus + .icon{
+	background-color: #00BFA6;
+	color: #fff;
+	border-right: 1px solid #00BFA6;
+	border: none;
+	transition: 1s;
+}
+.dob{
+	width: 30%;
+	padding: 14px;
+	text-align: center;
+	background-color: #ededed ;
+	transition: 0.3s;
+	outline: none;
+	border: 1px solid #dbdbdb;
+}
+.radio{
+	display: none;
+}
+.input-box label{
+	width: 100%;
+	padding: 13px;
+	background-color:#ededed ;
+	display: inline-block;
+    float: none;
+    text-align: center;
+	border: 1px solid #dbdbdb;
+}
+
+.input-box label:last-of-type{
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+.radio:checked + label{
+	background-color: #00BFA6;
+	color: #fff;
+	transition: 0.5s;
+}
+.input-box .button{
+	width: 100%;
+	background: transparent;
+	border: none;
+	background: #00BFA6;
+	padding: 15px;
+	border-radius: 4px;
+	font-size: 16px;
+	transition: all 0.35s ease;
+}
+.input-box .button:hover{
+	cursor: pointer ;
+	background: white;
+}
+.input-box .btn{
+	width: 40%;
+	border: none;
+	background: #dbdbdb;
+	padding: 15px;
+	border-radius: 30px;
+	font-size: 14px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.1);
+}
+.input-box .btn:hover{
+	cursor: pointer ;
+	background: white;
+}
